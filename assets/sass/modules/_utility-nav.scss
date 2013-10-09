@@ -7,17 +7,17 @@
 
 .utility-nav {
 	> ul { list-style-type: none; margin: 0; padding: 0; 
-		> li {
-			> a { display: block; font-size: 1.5em; padding: 1em; text-decoration: none; 
+		> li { margin-top: -1.5em; position: absolute; top: 50%;
+			> a { display: block; font-size: 1.5em; line-height: 1; padding: 0.5em; text-decoration: none;
 				&:hover,
 				&:active { color: $sp_red_orange; }
 			}
 		}
 	}
 	
-	.btn-main-nav { left: 0; position: absolute; top: 0; }
+	.btn-main-nav { left: 0; }
 	
-	.btn-settings { position: absolute; right: 0; top: 0; }
+	.btn-settings { right: 0; }
 }
 
 

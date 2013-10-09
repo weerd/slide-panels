@@ -6,7 +6,7 @@
 
 
 [role="banner"] { background-color: #00393B; color: $sp_light_green; position: relative; text-align: center; text-transform: uppercase;
-	> h1 { font-weight: normal; margin: 0; padding: 0.5em; }
+	> h1 { font-size: 1em; font-weight: normal; margin: 0; padding: 1em; }
 }
 
 
@@ -16,5 +16,7 @@
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 @media only screen and (min-width: $medium) {
-	
+	[role="banner"] {
+		> h1 { font-size: 2em; padding: 0.5em 1em; }
+	}
 }
