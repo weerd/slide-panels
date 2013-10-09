@@ -5,7 +5,7 @@
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-[role="contentinfo"] { 
+[role="contentinfo"] { margin-top: 2em;
 	> .wrapper { background-color: rgba(0,0,0,0.1); margin: 0 auto; padding: 0.5em; width: 90%; }
 }
 
@@ -14,6 +14,8 @@
 // MEDIA QUERIES
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-@media only screen and (min-width: $medium) {
-	
+@media only screen and (min-width: $large) {
+	[role="contentinfo"] {
+	> .wrapper { width: 1000px; }
+}
 }

@@ -5,8 +5,18 @@
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-.main-nav { background-color: #F6695B; padding: 0.5em; position: relative;
+.main-nav { background-color: #F6695B; padding: 1em; position: relative;
+	> h1 { border-bottom: 2px dashed $sp_dark_green; padding: 0.5em; }
 
+	ul { list-style-type: none; margin: 0; padding: 0; 
+		> li {  
+			> a { display: block; padding: 0.5em 1em; text-decoration: none; text-transform: uppercase; 
+				&:hover { background-color: $sp_dark_green; }
+			}
+		}
+	}
+
+	.btn-close { color: $sp_dark_green; }
 }
 
 
