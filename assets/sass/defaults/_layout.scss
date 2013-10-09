@@ -8,14 +8,6 @@ html, body { height: 100%; }
 
 .page { min-height: 100%; height: auto !important; height: 100%; overflow: hidden; position: relative; }
 
-[role="banner"] {  }
-
-[role="main"] {  }
-
-.main-nav {  }
-
-.settings {  }
-
 [role="banner"],
 [role="main"],
 .main-nav,
@@ -69,6 +61,20 @@ html, body { height: 100%; }
 		.settings {
 			-webkit-transform: translateX(0%);
 							transform: translateX(0%);
+		}
+	}
+
+	// No CSS Transforms support
+	&.no-csstransforms {
+		.main-nav { left: -100%; }
+		.settings { right: -100%; }
+
+		.is-showing-main-nav {
+			.main-nav { left: 0; }
+		}
+
+		.is-showing-settings {
+			.settings { right: 0; }
 		}
 	}
 

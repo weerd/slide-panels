@@ -1,6 +1,8 @@
 $(document).ready(function() {
 
-	document.addEventListener("touchstart", function(){}, true);
+	if (!$('html').hasClass('lt-ie9')) {
+		document.addEventListener("touchstart", function(){}, true);
+	}
 
 
 	var page = $('#page');
