@@ -1,0 +1,85 @@
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// LAYOUT STYLES
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+html, body { height: 100%; }
+
+.page { min-height: 100%; height: auto !important; height: 100%; overflow: hidden; position: relative; }
+
+[role="banner"] {  }
+
+[role="main"] {  }
+
+.main-nav {  }
+
+.settings {  }
+
+[role="banner"],
+[role="main"],
+.main-nav,
+.settings,
+[role="contentinfo"] {
+	-webkit-transition: all 0.3s ease-out;  
+		 -moz-transition: all 0.3s ease-out;
+			-ms-transition: all 0.3s ease-out;
+			 -o-transition: all 0.3s ease-out;
+					transition: all 0.3s ease-out;
+}
+
+
+// JS ENABLED
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.js {
+	
+	.main-nav { height: 100%; left: 0; position: fixed; top: 0; width: 100%;
+		-webkit-transform: translateX(-100%);
+						transform: translateX(-100%);
+	}
+
+	.settings { height: 100%; position: fixed; right: 0; top: 0; width: 100%; 
+		-webkit-transform: translateX(100%);
+						transform: translateX(100%);
+	}
+
+	.is-showing-main-nav {
+		[role="banner"],
+		[role="main"],
+		[role="contentinfo"] {
+			-webkit-transform: translateX(100%);
+							transform: translateX(100%);
+		}
+
+		.main-nav {
+			-webkit-transform: translateX(0%);
+							transform: translateX(0%);
+		}
+	}
+
+	.is-showing-settings {
+		[role="banner"],
+		[role="main"],
+		[role="contentinfo"] {
+			-webkit-transform: translateX(-100%);
+							transform: translateX(-100%);
+		}
+
+		.settings {
+			-webkit-transform: translateX(0%);
+							transform: translateX(0%);
+		}
+	}
+
+}
+
+
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// MEDIA QUERIES
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+@media only screen and (min-width: $medium) {
+	
+}
